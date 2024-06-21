@@ -1,40 +1,137 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Reforço</h2>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section>
+          <p>Termos</p>
+          <ul>
+            <li>Reforço</li>
+            <li>Intercalada</li>
+            <li>Fluxo de caixa sazonal</li>
+            <li>Balão</li>
+          </ul>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <div style="text-align: left">
+            <p>Definição?</p>
+            <p>O que é reforço?</p>
+          </div>
+        </section>
+
+        <section>
+          <p>Exemplo:</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>Saldo devedor:</th>
+                <td>R$ 1.188.570,91</td>
+              </tr>
+              <tr>
+                <th>Prazo:</th>
+                <td>20 meses</td>
+              </tr>
+              <tr>
+                <th>Tabela:</th>
+                <td>SAC</td>
+              </tr>
+              <tr>
+                <th>Valor total reforço:</th>
+                <td>R$ 200.000,00</td>
+              </tr>
+              <tr>
+                <th>Prazo reforço:</th>
+                <td>A cada 4 meses</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <section>
+            <p>Fluxo padrão</p>
+            <img src="assets/default.png" alt="Default Table" />
+          </section>
+          <section>
+            <p>Fluxo sem valor de reforço</p>
+            <img
+              src="assets/flow_without_reinforcement_total_value.png"
+              alt="Table without reinforcement total value"
+            />
+          </section>
+          <section>
+            <p>Fluxo do reforço (A cada 4 meses)</p>
+            <img
+              src="assets/reinforcement_flow.png"
+              alt="Reinforcement table"
+            />
+            <p>
+              <small> OBS: juros corrigido </small>
+            </p>
+          </section>
+          <section>
+            <p>Juros + Juros e Parcela + Parcela</p>
+            <div style="display: flex; gap: 10px">
+              <div>
+                <img
+                  src="assets/flow_without_reinforcement_total_value.png"
+                  alt="Table without reinforcement total value"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/reinforcement_flow.png"
+                  alt="Reinforcement table"
+                  style="width: auto; height: auto"
+                />
+              </div>
+            </div>
+          </section>
+          <section>
+            <p>Fluxo resultante</p>
+            <img src="assets/final.png" alt="Final table" />
+          </section>
+        </section>
+        <section>
+          <h2>Obrigado!</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
